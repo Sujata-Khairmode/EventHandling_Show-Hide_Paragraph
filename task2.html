@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #ptag{
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="btn" onclick="show()">hide</button>
+    <p id="ptag">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi maiores repellat sit sapiente quidem,
+        doloribus tempore quod amet iure nemo? Harum quibusdam corporis enim aut ea, eius eligendi nihil voluptatem.</p>
+        
+</body>
+<script>
+    function show(){
+      let p=  document.getElementById('ptag');
+      if(p.style.display==='none'){
+        p.style.display='block';
+        document.getElementsById('btn').innerText='Hide';
+      }
+      else{
+        p.style.display='none';
+        document.getElementById('btn').innerText='Show';
+      }
+    }
+</script>
+
+</html>
